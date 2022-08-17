@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./addmore.js" defer></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="popup.php" method="POST" class="form">
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name *" tabindex="1" required>
+            </div>
+            <div class="form-group">
+                <label for="Phone_number" class="form-label">Phone Number</label>
+                <input type="tel" onKeyDown="if(this.value.length==10 && event.keyCode!=8) return false;" class="form-control" id="phone_number" name="phone_number" placeholder="Phone Number *"
+                tabindex="2" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control " id="email" name="email" placeholder="Email" 
+                    >
+            </div>
+            <div class="form-group">
+                <label for="product" class="form-label">Prodct</label>
+                <select name="product-1" class="form-control" id = "p-1"  required>
+                    <option disabled value="" selected hidden>Select Product *</option>
+                    <option value="HARD COKE NO.1">Hard Coke No. 1</option>
+                    <option value="SUPER HARD COKE">SUPER HARD COKE</option>
+                    <option value="PLATFORM NUT COKE">Platform Nut Coke</option>
+                    <option value="SPECIAL NUT COKE">Special Nut Coke</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="requirement" class="form-label">Requiremt</label>
+                <input type="number" class="form-control" id="r-1" name="requirement-1"   min="10" placeholder="Enter Quantity in Tons ( Min: 10 Tons) *"
+                     required>
+            </div>
+            <div class="form-group">
+                <p class="form-control"><span class="add_more" id="add-more-1"><span>(+) </span><span class="underline">Add More</span></span></p>
+            </div>
+            <div class="form-group p-2">
+                <label for="product" class="form-label">Prodct</label>
+                <select name="product-2" class="form-control" id = "p-2" >
+                    <option disabled value="" selected hidden>Select Product</option>
+                    <option class="options" value="HARD COKE NO.1">Hard Coke No. 1</option>
+                    <option class="options" value="SUPER HARD COKE">SUPER HARD COKE</option>
+                    <option class="options" value="PLATFORM NUT COKE">Platform Nut Coke</option>
+                    <option class="options" value="SPECIAL NUT COKE">Special Nut Coke</option>
+                </select>
+            </div>
+            
+            <div class="form-group r-2">
+                <label for="requirement" class="form-label">Requiremt</label>
+                <input type="number" class="form-control" id="r-2" name="requirement-2"  min="10" placeholder="Enter Quantity in Tons ( Min: 10 Tons) *"
+                    >
+            </div>
+            <div class="form-group">
+                <p class="form-control"><span class="add_more add_more_2" id="add-more-2">(+) <span class="underline">Add More</span></span><span class="add_less" id="add-less-1">(-) <span class="underline">Add Less</span></span></p>
+            </div>
+            <div class="form-group p-3">
+                <label for="product" class="form-label">Prodct</label>
+                <select name="product-3" class="form-control" id = "p-3" >
+                    <option disabled value="" selected hidden>Select Product</option>
+                    <option class="options" value="HARD COKE NO.1">Hard Coke No. 1</option>
+                    <option class="options" value="SUPER HARD COKE">SUPER HARD COKE</option>
+                    <option class="options" value="PLATFORM NUT COKE">Platform Nut Coke</option>
+                    <option class="options" value="SPECIAL NUT COKE">Special Nut Coke</option>
+                </select>
+            </div>
+            
+            <div class="form-group r-3">
+                <label for="requirement" class="form-label">Requiremt</label>
+                <input type="number" class="form-control" id="r-3" name="requirement-3" min="10" placeholder="Enter Quantity in Tons ( Min: 10 Tons) *"
+                    >
+            </div>
+            <div class="form-group">
+                <p class="form-control"><span class="add_more add_more_3" id="add-more-3"><span>(+) </span><span class="underline">Add More</span></span><span class="add_less" id="add-less-2">(-) <span class="underline">Add Less</span></span></p>
+            </div>
+            <div class="form-group p-4">
+                <label for="product" class="form-label">Prodct</label>
+                <select name="product-4" class="form-control" id = "p-4" >
+                    <option disabled value="" selected hidden>Select Product</option>
+                    <option class="options" value="HARD COKE NO.1">Hard Coke No. 1</option>
+                    <option class="options" value="SUPER HARD COKE">SUPER HARD COKE</option>
+                    <option class="options" value="PLATFORM NUT COKE">Platform Nut Coke</option>
+                    <option class="options" value="SPECIAL NUT COKE">Special Nut Coke</option>
+                </select>
+            </div>
+            
+            <div class="form-group r-4">
+                <label for="requirement" class="form-label">Requiremt</label>
+                <input type="number" class="form-control" id="r-4" name="requirement-4"  min="10" placeholder="Enter Quantity in Tons ( Min: 10 Tons) *"
+                    >
+            </div>
+            <div class="form-group">
+                <p class="form-control"><span class="add_less" id="add-less-3"><span>(-) </span><span class="underline">Add Less</span></span></p>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" rows="5" cols="50" id="message" name="message"
+                    placeholder="Enter Message..."></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn">Send Message!</button>
+                <p>Contact: <a href="tel:9431125365">9431125365</a> , <a href="tel:7846971254">7846971254</a></p>
+            </div>
+        </form>
+        <script>
+            //Prevent resubmission
+
+            if ( window.history.replaceState ) {
+                window.history.replaceState( null, null, window.location.href );
+            }
+        </script>
+    </div>
+</body>
+
+</html>

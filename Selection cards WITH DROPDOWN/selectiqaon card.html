@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transparent card</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="selectioncard.css" rel="stylesheet">
+    <script type="text/javascript" src="./Js/slider.js" defer></script>
+    
+    <script type="text/javascript" src="Dropdownmenu.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="card" id="card-1">
+          <div class="content">
+            <div class="imgBx"><img src="logo1.png"></div>
+            <div class="contentBx">
+              <h3>Somewhere<br><span>nice</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <i class="fas fa-chevron-down"></i>
+            </li>
+          
+          </ul>
+        </div>
+        
+        <div class="card" id="card-2">
+          <div class="content">
+            <div class="imgBx"><img src="logo2.PNG"></div>
+            <div class="contentBx">
+              <h3>Somewhere<br><span>nice</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <i class="fas fa-chevron-down"></i>
+            </li>
+          
+          </ul>
+        </div>
+        
+        <div class="card" id="card-3">
+          <div class="content">
+            <div class="imgBx"><img src="logo3.png"></div>
+            <div class="contentBx">
+              <h3>Somewhere<br><span>nice</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <i class="fas fa-chevron-down"></i>
+            </li>
+          
+          </ul>
+        </div>
+
+        
+      </div>
+    </section>
+    <div class="dropdownmenu" id = "d-menu-1" show="false">
+      <h2>Images-1</h2>
+    </div>
+    <div class="dropdownmenu" id = "d-menu-2" show="false">
+      <h2>Images-2</h2>
+    </div>
+    <div class="dropdownmenu" id = "d-menu-3" show="false">
+      <h2>Images-3</h2>
+    </div>
+    <footer>
+      <h3>Footer</h3>
+    </footer>
+  </body>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".card"), {
+		max: 5,
+		speed: 400
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+</html>

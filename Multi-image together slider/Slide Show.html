@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Styl/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="text/javascript" src="./Js/slider.js" defer></script>
+    <title>Multi image slider</title>
+</head>
+<body>
+    <div class="image-slider" id="images-slider">
+        <i class="fas fa-chevron-left n-prev-btn"></i>
+        <div class="islider1 l-r" id="slider1">
+            <div class="slider1_slide active">
+                <img src="./Styl/1.jpg" class="Images">
+            </div>
+            <div class="slider1_slide">
+                <img src="./Styl/2.jpg" class="Images">
+            </div>
+            <div class="slider1_slide">
+                <img src="./Styl/3.jpg" class="Images">
+            </div>
+            <div class="slider1_slide">
+                <img src="./Styl/4.jpg" class="Images">
+            </div>
+            <div class="slider1_slide">
+                <img src="./Styl/5.jpg" class="Images">
+            </div>
+        </div>
+        <div class="islider2 l-r" id="slider2">
+            <div class="slider2_slide">
+                <img src="./Styl/1.jpg" class="Images">
+            </div>
+            <div class="slider2_slide active" >
+                <img src="./Styl/2.jpg" class="Images">
+            </div>
+            <div class="slider2_slide">
+                <img src="./Styl/3.jpg" class="Images">
+            </div>
+            <div class="slider2_slide">
+                <img src="./Styl/4.jpg" class="Images"> 
+            </div>
+            <div class="slider2_slide">
+                <img src="./Styl/5.jpg" class="Images">
+            </div>
+        </div>
+        <i class="fas fa-chevron-right n-next-btn"></i>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <i class="fas fa-chevron-left s-prev"></i>
+            <img class="modal-content" id="img01">
+            <i class="fas fa-chevron-right s-next"></i>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
